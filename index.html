@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Profesjonalne usługi stolarskie – meble na wymiar, naprawy i renowacja drewna">
+    <title>Usługi Stolarskie - Stolarz BOGDAN</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+
+        header {
+            background: url('wood.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+
+        #services ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            text-align: left;
+            font-size: 1.1em;
+        }
+
+        #services ul li {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        #services ul li:hover {
+            transform: translateY(-10px);
+        }
+
+
+        .gallery-images {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .gallery-images img {
+            width: 48%;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+
+        #contact ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            font-size: 1.1em;
+            margin-top: 20px;
+        }
+
+        #contact ul li {
+            margin-bottom: 10px;
+        }
+
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        #change-background-btn {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2em;
+            border-radius: 5px;
+            position: fixed; 
+            top: 20px;
+            right: 20px;
+            z-index: 10000;  
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+        }
+
+        #change-background-btn:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Stolarz BOGDAN</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">O nas</a></li>
+                    <li><a href="#services">Usługi</a></li>
+                    <li><a href="#gallery">Galeria</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+
+            <button id="change-background-btn">Zmień tło</button>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>O nas</h2>
+            <p>Jesteśmy profesjonalnym stolarzem z wieloletnim doświadczeniem. Specjalizuje się w tworzeniu mebli na wymiar, naprawach stolarskich oraz renowacji drewna. Moja firma stawia na jakość, precyzję i indywidualne podejście do każdego klienta.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Nasze usługi</h2>
+            <ul>
+                <li>Produkcja mebli na wymiar</li>
+                <li>Renowacja i naprawa mebli</li>
+                <li>Instalacja drzwi i okien drewnianych</li>
+                <li>Projektowanie i wykonawstwo drewnianych konstrukcji</li>
+                <li>Wykonywanie balustrad, schodów i poręczy</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="container">
+            <h2>Galeria</h2>
+            <div class="gallery-images">
+                <img src="meble.jpg" alt="Meble na wymiar">
+                <img src="renowacja.jpg" alt="Renowacja mebli">
+                <img src="montaz.jpg" alt="Instalacja drzwi drewnianych">
+                <img src="schody.jpg" alt="Schody drewniane">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Kontakt</h2>
+            <p>Skontaktuj się z nami, aby uzyskać szczegółowe informacje o naszych usługach i cenniku.</p>
+            <ul>
+                <li>Telefon: +48 123 456 789</li>
+                <li>Email: stolarz@BOGDAN.pl</li>
+                <li>Adres: Ul. Sadowa 12, 97-300 Piotrków Trybunalski</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Stolarz BOGDAN. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script>
+        document.getElementById("change-background-btn").addEventListener("click", function() {
+            var colors = ["#FFB6C1", "#FF6347", "#98FB98", "#ADD8E6", "#FFFF00", "#FFA500", "#D3D3D3"];
+            var randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = randomColor;
+        });
+    </script>
+</body>
+</html>
